@@ -1,0 +1,27 @@
+{
+  "name": "duplicate-lab-order-fix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "fix": "node index.js",
+    "dryRun": "DRY_RUN=true node index.js",
+    "lint": "eslint . --ext=js,jsx --fix"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "^0.19.3",
+    "mssql": "^6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
