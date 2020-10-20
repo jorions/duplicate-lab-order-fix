@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "fix": "node index.js",
-    "dryRun": "DRY_RUN=true node index.js",
+    "fix": "TO_RUN=fix node index.js",
+    "fixTwo": "TO_RUN=fixTwo node index.js",
+    "dryRun-fix": "TO_RUN=fix DRY_RUN=true node index.js",
+    "dryRun-fixTwo": "TO_RUN=fixTwo DRY_RUN=true node index.js",
     "lint": "eslint . --ext=js,jsx --fix"
   },
   "dependencies": {
